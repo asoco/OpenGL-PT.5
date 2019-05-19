@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A5D1E3D422915D9000A421A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5D1E3D322915D9000A421A1 /* main.cpp */; };
+		A5D1E3DD22915D9A00A421A1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1E3DB22915D9A00A421A1 /* OpenGL.framework */; };
+		A5D1E3DE22915D9A00A421A1 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D1E3DC22915D9A00A421A1 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		A5D1E3D022915D9000A421A1 /* OpenGL PT.5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenGL PT.5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D1E3D322915D9000A421A1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A5D1E3DB22915D9A00A421A1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		A5D1E3DC22915D9A00A421A1 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D1E3DD22915D9A00A421A1 /* OpenGL.framework in Frameworks */,
+				A5D1E3DE22915D9A00A421A1 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				A5D1E3D222915D9000A421A1 /* OpenGL PT.5 */,
 				A5D1E3D122915D9000A421A1 /* Products */,
+				A5D1E3DA22915D9A00A421A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +67,15 @@
 				A5D1E3D322915D9000A421A1 /* main.cpp */,
 			);
 			path = "OpenGL PT.5";
+			sourceTree = "<group>";
+		};
+		A5D1E3DA22915D9A00A421A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D1E3DC22915D9A00A421A1 /* GLUT.framework */,
+				A5D1E3DB22915D9A00A421A1 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
