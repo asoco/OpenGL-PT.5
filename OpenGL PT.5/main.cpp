@@ -127,7 +127,7 @@ void density (){
     if (DensEnable){
         Density=0.0001;
     } else {
-        Density=1.0;
+        Density=0.1;
     }
 }
 
@@ -141,7 +141,7 @@ void display()
     drawAxes();
     drawScale(Scale);
     //Рисуем функцию
-    
+    density();
     drawFunc(15);
     glutSwapBuffers();
     glFinish();
