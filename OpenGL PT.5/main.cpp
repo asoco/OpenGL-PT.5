@@ -149,13 +149,16 @@ void display()
 
 void mouse(int button, int state, int x, int y)
 {
-    switch (button){
-    case GLUT_LEFT_BUTTON:
-            DensEnable = true;
-            break;
-    case GLUT_RIGHT_BUTTON:
-            DensEnable = false;
-            break;
+    if (state == GLUT_DOWN){
+        switch (button){
+            case GLUT_LEFT_BUTTON:
+                DensEnable = true;
+                break;
+            case GLUT_RIGHT_BUTTON:
+                DensEnable = false;
+                break;
+        }
+        glutPostRedisplay();
     }
 }
 
